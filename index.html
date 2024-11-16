@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4b302d1940.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- link slik slider -->
+    <link rel="stylesheet" href="./src/slick.css" />
+    <!-- link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Hafiz Abubakar</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./src/output.css">
+
+    <style>
+        * {
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 25px;
+            height: 4px;
+            background-color: black;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            transform: translate(0, 9px) rotate(-45deg);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: translate(0, -9px) rotate(45deg);
+        }
+
+        #fot {
+            font-family: Playfair Display;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgb(172, 135, 64);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(rgb(255, 166, 0), yellow);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="w-full flex flex-col justify-center items-center bg-[#ffd966]">
+
+
+    <!-- header start   -->
+
+    <header class="max-w-[2000px]">
+        <section id="top  w-full flex flex-col">
+            <!-- top start -->
+
+            <section
+                class="bg-[#ffd966] w-full lg:pl-0 lg:w-24 pt-5 pl-3 flex flex-col lg:border-r-[0.1px] lg:border-black lg:h-[100vh] lg:fixed lg:left-0 lg:z-10">
+                <div class="lg:flex flex-col justify-between">
+                    <div class="flex items-center lg:justify-center">
+                        <img class="w-16" src="./images/logo.png" alt="">
+                        <h1 class="text-2xl font-semibold ml-3 lg:hidden">Portfolio</h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center absolute bottom-14 left-7">
+                        <i
+                            class="fa-brands fa-facebook hidden lg:block w-10 h-10 text-center leading-[40px]  text-2xl transition-all hover:text-white hover:bg-black"></i>
+                        <i
+                            class="fa-brands fa-instagram hidden lg:block w-10 h-10 text-center leading-[40px] text-2xl transition-all hover:text-white hover:bg-black mt-5"></i>
+                        <i
+                            class="fa-brands fa-linkedin hidden lg:block w-10 h-10 text-center leading-[40px] text-2xl transition-all hover:text-white hover:bg-black mt-5"></i>
+                    </div>
+                </div>
+            </section>
+            <div id="nav-btn" class="position: absolute top-9 right-4 xl:hidden duration-500 z-20">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+            <!-- top end -->
+            <section class="w-full pt-14 lg:pt-20 mb-20">
+                <div class="w-full flex flex-col justify-center items-center">
+                    <div class="w-full flex flex-col md:flex-row md:justify-center md:items-center lg:w-[83%]">
+                        <div class="w-full flex flex-col justify-start items-baseline pl-4 mb-10 lg:m-0">
+                            <h1 class="text-2xl font-normal mb-3 lg:text-3xl">HI, I'M A FRONTEND WEB</h1>
+                            <div class="h-20 w-20 mb-7"><span id="auto-type"
+                                    class="text-5xl font-bold mb-5 md:text-6xl lg:text-[80px] w-20"></span></div>
+                            <h2 class="text-xl font-normal mb-10 lg:text-2xl">based in Faislabad, Pakistan.</h2>
+                            <div class="flex gap-6">
+                                <a class="link" href="#projects"><button
+                                        class="w-32 bg-black text-white h-10 rounded-3xl lg:w-40 lg:h-12">View My
+                                        Work</button></a>
+                                <a class="link" href="#contact"><button
+                                        class="w-32 h-10 border-black border rounded-3xl hover:bg-black hover:text-white lg:w-40 lg:h-12">Contact
+                                        Me</button></a>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="rounded-[50%] w-[80%] sm:w-[70%] border-2 border-black xl:w-[60%]"
+                                src="./images/img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
+                    <p class="text-lg text-gray-800">01/06</p>
+                    <a class="flex link" href="#about">
+                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
+                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </header>
+    <!-- header end   -->
+
+
+    <!-- Nav start -->
+
+    <nav class="w-full max-w-[2000px] overflow-hidden  fixed top-0 xl:sticky xl:top-1 xl:mb-20 z-10">
+        <div id="navbar"
+            class="w-0  h-[100vh] overflow-hidden duration-500 bg-orange-300 flex flex-col pt-3  xl:sticky xl:w-full xl:bg-opacity-0 xl:h-auto">
+            <div class="w-full flex flex-col justify-center items-center xl:hidden mb-5">
+                    <div class="w-[82%] flex items-center">
+                        <img class="w-16" src="./images/logo.png" alt="">
+                        <h1 class="text-2xl font-semibold ml-3">Portfolio</h1>
+                    </div>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <ul class="w-[80%] flex flex-col gap-4 xl:w-[90%] ml-[5%] xl:flex-row justify-center items-center xl:border xl:border-black xl:py-2 xl:bg-[#ffd966]
+                z-10">
+                    <a class="w-full xl:w-auto link" href="#top">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center xl:p-3">
+                            TOP</li>
+                    </a>
+                    <a class="w-full xl:w-auto link" href="#about">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center xl:p-3 ">
+                            ABOUT ME</li>
+                    </a>
+                    <a class="w-full xl:w-auto link" href="#service">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3 ">
+                            MY SERVICES</li>
+                    </a>
+                    <a class="w-full xl:w-auto link" href="#projects">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                            PROJECTS</li>
+                    </a>
+                    <a class="w-full xl:w-auto link" href="#tech">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                            TECNOLOGIES</li>
+                    </a>
+                    <a class="w-full xl:w-auto link" href="#contact">
+                        <li
+                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                            CONTACT</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav end -->
+
+    <!-- main start -->
+
+    <main class="w-full max-w-[2000px] pb-10">
+
+        <!-- About start -->
+        <section id="about" class="w-full py-24" data-aos="fade-flip">
+            <div class="w-full flex flex-col justify-center items-center mb-7 ">
+                <div
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Some Word About Me</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">Know Me More</h1>
+                </div>
+                <h1 id="fot"
+                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">About
+                    ME</h1>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center">
+                <div class="w-[95%] flex flex-col justify-start items-baseline lg:w-[80%]">
+                    <h1 class="text-2xl mb-5 font-semibold md:text-3xl lg:text-4xl">Hi, I'm Hafiz Muhammad Abubakar
+                        Siddique</h1>
+                    <p class="sm:w-1/2 mb-10 md:mb-20 lg:mb-28">I’m a front-end web developer with a passion for
+                        creating responsive, user-friendly websites. I’m skilled in HTML, CSS, and JavaScript, and I’m
+                        familiar frameworks like React. I’m excited to continue learning and building clean, efficient
+                        code that delivers great user experiences.</p>
+                    <div class="flex flex-col gap-5 sm:flex-row md:gap-9 lg:gap-14">
+                        <div>
+                            <p class="font-medium">Email:</p>
+                            <p>hafizabubakar0155@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Date of Birth:</p>
+                            <p>15 November, 2005</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">City:</p>
+                            <p>Faislabad, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
+                <p class="text-lg text-gray-800">02/06</p>
+                <a class="flex link" href="#service">
+                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
+                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                </a>
+            </div>
+        </section>
+        <!-- About end -->
+
+        <!-- My Services start -->
+        <section id="service" class="w-full py-24">
+            <div class="w-full flex flex-col justify-center items-center" data-aos="fade-flip">
+                <div class="w-full flex flex-col justify-center items-center mb-7 lg:mb-10">
+                    <div
+                        class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
+                        <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">How I Can Help Your Next Project</h1>
+                        <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">What I Do?</h1>
+                    </div>
+                    <h1 id="fot"
+                        class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">MY
+                        SERVICES</h1>
+                </div>
+                <div id="slider-1" class="w-full flex justify-center items-center lg:w-[80%] py-10">
+
+
+                    <div>
+                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none ml-2">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
+                                            <h1
+                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                1</h1>
+                                            <h1 class="text-2xl font-bold mb-4">HTML</h1>
+                                            <p>Building Sutructure Of a WebSite With HTML.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
+                                            <h1
+                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                2</h1>
+                                            <h1 class="text-2xl font-bold mb-4">Css</h1>
+                                            <p>Styling Of a Website Using Vanila Css.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
+                                            <h1
+                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                3</h1>
+                                            <h1 class="text-2xl font-bold mb-4">JavaScript</h1>
+                                            <p>Functionality Of a WebSite Using JavaScript .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
+                                            <h1
+                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                4</h1>
+                                            <h1 class="text-2xl font-bold mb-4">TailwindCss</h1>
+                                            <p>I Use TailwindCss For Designing of a Website.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
+                <p class="text-lg text-gray-800">03/06</p>
+                <a class="flex link" href="#projects">
+                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
+                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                </a>
+            </div>
+        </section>
+        <!-- My Services end-->
+
+        <!-- projects start -->
+        <section id="projects" class="w-full py-24 flex flex-col justify-center items-center" data-aos="fade-flip">
+            <div class="w-full flex flex-col justify-center items-center mb-20">
+                <div
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">My Few Projects</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">My Projects</h1>
+                </div>
+                <h1 id="fot"
+                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    PROJECTS</h1>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center sm:flex-row lg:flex-col lg:w-[80%]">
+                <div class="w-full flex flex-col justify-center items-center gap-7 lg:flex-row">
+
+
+                    <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/cars/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96  flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/one.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-1</h1>
+                                            <p>This is my first project. it is also have responsive design and
+                                                it is very hard for me to make this because this is my first
+                                                experience to make a webpage.I make it with HTML , Css.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="w-full flex justify-center items-center"
+                        href="https://hafizabubakar555.github.io/valentine/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/two.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-2</h1>
+                                            <p> This is my Second project. It is also have responsive design.it
+                                                is also make with HTML ,Css.This is the time that i was
+                                                learning bootstrap and TailwindCss.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/stars/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/three.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-3</h1>
+                                            <p>This is my Third project.it is make with HTML,TailwindCss and
+                                                Javascript. This time i am learning Javascript. First i make
+                                                the layout of this page then completing JavaScript and come
+                                                back and include the funtaionality.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                </div>
+                <div class="w-full flex flex-col justify-center items-center gap-7 lg:flex-row">
+
+                    <a class="w-full flex justify-center items-center"
+                        href="https://hafizabubakar555.github.io/Erich-Redder/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/four.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-4</h1>
+                                            <p>This is my fourth project. it is make with HTML, Css and
+                                                JavaScript.In this page i iprove my desin and focus the
+                                                responsivness and functionality and i am also include
+                                                animation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/Jfile/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/five.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-5</h1>
+                                            <p>This is my fifth project. it is make with HTML, TailwindCss
+                                                and JavaScript .In this point i realize this that now i am a
+                                                Frontend Devoloper.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="w-full flex justify-center items-center"
+                        href="https://hafizabubakar555.github.io/Donation-Form/">
+                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
+                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                                <div
+                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    <div
+                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
+                                            <div class="flex w-full mb-3">
+                                                <img src="./images/six.PNG" alt="">
+                                            </div>
+                                            <h1 class="text-2xl font-semibold mb-2">Project-6</h1>
+                                            <p>This is my sisth project and this is the donation form of the
+                                                fifth project. it is also have funstionality and responsive
+                                                design.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+        <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-20">
+            <p class="text-lg text-gray-800">04/06</p>
+            <a class="flex link" href="#tech">
+                <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
+            <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+            </a>
+        </div>
+        <!-- projects end -->
+
+        <!-- TECNOLOGIES start -->
+        <section data-aos="fade-flip" id="tech" class="w-full py-24">
+            <div class="w-full flex flex-col justify-center items-center mb-20" data-aos="fade-flip">
+                <div
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Technologies</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">That I'm Use</h1>
+                </div>
+                <h1 id="fot"
+                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    TECNOLOGIES</h1>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center">
+
+                <div id="slider" class="w-full gap-5 py-4 lg:w-[80%]">
+                    <div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="w-[30%]" src="./images/slider-html.png" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="w-[30%]" src="./images/slider-css.png" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="w-[30%]" src="./images/slider-js.png" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="w-[30%]" src="./images/Tailwind CSS.png" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full flex justify-center items-center">
+                            <img class="w-[30%]" src="./images/react.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
+                <p class="text-lg text-gray-800">05/06</p>
+                <a class="flex link" href="#contact">
+                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
+                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                    </a>
+            </div>
+        </section>
+        <!-- TECNOLOGIES end -->
+
+        <!-- Contact start -->
+        <section id="contact" class="w-full py-24" data-aos="fade-flip">
+            <div class="w-full flex flex-col justify-center items-center mb-20">
+                <div
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Let's Get In Touch</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">Contact Me</h1>
+                </div>
+                <h1 id="fot"
+                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    CONTACT</h1>
+            </div>
+            <div class="w-full flex flex-col justify-center items-center mb-20 md:mb-32">
+                <div class="w-[90%] flex flex-col justify-start items-baseline gap-8 lg:flex-row lg:w-[80%]">
+                    <div class="w-full flex flex-col gap-8 sm:flex-row">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone border-2 border-black p-5 rounded-[50%]"></i>
+                            <p>+92 322 6368525</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-envelope border-2 border-black p-5 rounded-[50%]"></i>
+                            <p>hafizabubakar0155@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col gap-8 sm:flex-row">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot border-2 border-black p-5 rounded-[50%]"></i>
+                            <p>Allamah IQbal Colony Faislabad Pakistan</p>
+                        </div>
+                        <div class="flex gap-5">
+                            <a href="#"><i
+                                    class="fa-brands fa-facebook border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-instagram border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-linkedin border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-center items-center mb-16 lg:w-[80%]">
+                <div class="w-[90%] flex flex-col justify-start items-baseline gap-8 lg:w-[75%]">
+                    <h1 class="text-2xl font-bold md:text-4xl mb-8">Leave a Message</h1>
+                    <div class="w-full flex-col flex gap-5 md:flex-row">
+                        <div class="w-full">
+                            <p class="text-lg mb-4">Name</p>
+                            <input
+                                class="w-full h-11 pl-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                                type="text" placeholder="Your Name">
+                        </div>
+                        <div class="w-full">
+                            <p class="text-lg mb-4">Email</p>
+                            <input
+                                class="w-full h-11 pl-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                                type="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="w-full mb-10">
+                        <p class="text-lg mb-4">Message</p>
+                        <textarea
+                            class="w-full h-32 pl-2 pt-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <button
+                        class="text-xl border-black border py-10 px-6 rounded-[50%] hover:bg-black hover:text-white">Submit</button>
+                </div>
+            </div>
+            <div class="flex items-center ml-4 lg:ml-32 mt-20 ">
+                <p class="text-lg text-gray-800">06/06</p>
+            </div>
+        </section>
+        <!-- Contact end -->
+    </main>
+
+
+    <!-- main end -->
+
+
+    <!-- footer start -->
+    <footer class="bg-[#f1cc5d] w-full py-4 lg:py-5">
+        <div class="w-full flex flex-row justify-between items-center sm:justify-around">
+            <div>
+                <h1 class="ml-3 lg:m-0">Copyright © 2024. All rights reservd</h1>
+            </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed("#auto-type", {
+            strings: ["DEVELOPER"],
+            typeSpeed: 300,
+            backSpeed: 100,
+            loop: true,
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+        integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#slider-1").slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                prevArrow:
+                    ' <span class="prev-btn"></span>',
+                nextArrow:
+                    ' <span class="next-btn"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#slider").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 500,
+                prevArrow:
+                    ' <span class="prev-btn"></span>',
+                nextArrow:
+                    ' <span class="next-btn"></i></span>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+    <!-- link AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 700,
+        });
+    </script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
