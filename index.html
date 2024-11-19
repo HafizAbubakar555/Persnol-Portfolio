@@ -35,7 +35,7 @@
         .bar3 {
             width: 25px;
             height: 4px;
-            background-color: black;
+            background-color: white;
             margin: 5px 0;
             transition: 0.4s;
         }
@@ -57,21 +57,21 @@
         }
 
         ::-webkit-scrollbar {
-            width: 15px;
+            width: 10px;
         }
 
         ::-webkit-scrollbar-track {
-            background-color: rgb(172, 135, 64);
+            background-color: rgb(9, 1, 27);
         }
 
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(rgb(255, 166, 0), yellow);
+            background: linear-gradient(#4d79a2, #3e067d);
             border-radius: 10px;
         }
     </style>
 </head>
 
-<body class="w-full flex flex-col justify-center items-center bg-[#ffd966]">
+<body class="w-full flex flex-col justify-center items-center bg-gradient-to-r from-[#110025] to-[#282828]">
 
 
     <!-- header start   -->
@@ -81,19 +81,19 @@
             <!-- top start -->
 
             <section
-                class="bg-[#ffd966] w-full lg:pl-0 lg:w-24 pt-5 pl-3 flex flex-col lg:border-r-[0.1px] lg:border-black lg:h-[100vh] lg:fixed lg:left-0 lg:z-10">
+                class="lg:bg-[#282828] w-full lg:pl-0 lg:w-24 pt-5 pl-3 flex flex-col lg:border-r-[0.1px] lg:border-black lg:h-[100vh] lg:fixed lg:left-0 lg:z-10">
                 <div class="lg:flex flex-col justify-between">
                     <div class="flex items-center lg:justify-center">
                         <img class="w-16" src="./images/logo.png" alt="">
-                        <h1 class="text-2xl font-semibold ml-3 lg:hidden">Portfolio</h1>
+                        <h1 class="text-2xl font-semibold ml-3 text-white lg:hidden">Portfolio</h1>
                     </div>
                     <div class="flex flex-col justify-center items-center absolute bottom-14 left-7">
                         <i
-                            class="fa-brands fa-facebook hidden lg:block w-10 h-10 text-center leading-[40px]  text-2xl transition-all hover:text-white hover:bg-black"></i>
+                            class="fa-brands fa-facebook hidden lg:block w-10 h-10 text-center leading-[40px] text-white  text-2xl transition-all hover:text-[#3e067d] hover:bg-white"></i>
                         <i
-                            class="fa-brands fa-instagram hidden lg:block w-10 h-10 text-center leading-[40px] text-2xl transition-all hover:text-white hover:bg-black mt-5"></i>
+                            class="fa-brands fa-instagram hidden lg:block w-10 h-10 text-center leading-[40px] text-white text-2xl transition-all hover:text-[#3e067d] hover:bg-white mt-5"></i>
                         <i
-                            class="fa-brands fa-linkedin hidden lg:block w-10 h-10 text-center leading-[40px] text-2xl transition-all hover:text-white hover:bg-black mt-5"></i>
+                            class="fa-brands fa-linkedin hidden lg:block w-10 h-10 text-center leading-[40px] text-white text-2xl transition-all hover:text-[#3e067d] hover:bg-white mt-5"></i>
                     </div>
                 </div>
             </section>
@@ -110,16 +110,16 @@
                 <div class="w-full flex flex-col justify-center items-center">
                     <div class="w-full flex flex-col md:flex-row md:justify-center md:items-center lg:w-[83%]">
                         <div class="w-full flex flex-col justify-start items-baseline pl-4 mb-10 lg:m-0">
-                            <h1 class="text-2xl font-normal mb-3 lg:text-3xl">HI, I'M A FRONTEND WEB</h1>
-                            <div class="h-20 w-20 mb-7"><span id="auto-type"
+                            <h1 class="text-white text-2xl font-normal mb-3 lg:text-3xl">HI, I'M A FRONTEND WEB</h1>
+                            <div class="h-20 w-20 mb-7 text-white"><span id="auto-type"
                                     class="text-5xl font-bold mb-5 md:text-6xl lg:text-[80px] w-20"></span></div>
-                            <h2 class="text-xl font-normal mb-10 lg:text-2xl">based in Faislabad, Pakistan.</h2>
+                            <h2 class="text-gray-200 text-xl font-normal mb-10 lg:text-2xl">based in Faislabad, Pakistan.</h2>
                             <div class="flex gap-6">
                                 <a class="link" href="#projects"><button
-                                        class="w-32 bg-black text-white h-10 rounded-3xl lg:w-40 lg:h-12">View My
+                                        class="w-32 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:from-[#3e067d] hover:to-[#4d79a2] text-white h-10 rounded-3xl lg:w-40 lg:h-12">View My
                                         Work</button></a>
                                 <a class="link" href="#contact"><button
-                                        class="w-32 h-10 border-black border rounded-3xl hover:bg-black hover:text-white lg:w-40 lg:h-12">Contact
+                                        class="w-32 h-10 border-white text-white hover:bg-gradient-to-r hover:from-[#3e067d] hover:to-[#4d79a2] hover:border-none border rounded-3xl lg:w-40 lg:h-12">Contact
                                         Me</button></a>
                             </div>
                         </div>
@@ -130,10 +130,10 @@
                     </div>
                 </div>
                 <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
-                    <p class="text-lg text-gray-800">01/06</p>
+                    <p class="text-lg text-gray-200">01/06</p>
                     <a class="flex link" href="#about">
-                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
-                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer text-white">Next Capter</p>
+                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer text-white"></i>
                     </a>
                 </div>
             </section>
@@ -146,44 +146,44 @@
 
     <nav class="w-full max-w-[2000px] overflow-hidden xl:sticky xl:top-1 xl:mb-20 z-10">
         <div id="navbar"
-            class="w-0  h-[100vh] fixed top-0 overflow-hidden duration-500 bg-orange-300 flex flex-col pt-3  xl:sticky xl:w-full xl:bg-opacity-0 xl:h-auto">
+            class="w-0  h-[100vh] fixed top-0 overflow-hidden duration-500  flex flex-col pt-3 bg-gradient-to-r from-[#282828] to-[#110025]  xl:sticky xl:w-full xl:bg-opacity-0 xl:h-auto xl:bg-gradient-to-r xl:from-transparent xl:to-transparent">
             <div class="w-full flex flex-col justify-center items-center xl:hidden mb-5">
                     <div class="w-[82%] flex items-center">
                         <img class="w-16" src="./images/logo.png" alt="">
-                        <h1 class="text-2xl font-semibold ml-3">Portfolio</h1>
+                        <h1 class="text-2xl font-semibold ml-3 text-white">Portfolio</h1>
                     </div>
             </div>
             <div class="w-full flex justify-center items-center">
-                <ul class="w-[80%] flex flex-col gap-4 xl:w-[90%] ml-[5%] xl:flex-row justify-center items-center xl:border xl:border-black xl:py-2 xl:bg-[#ffd966]
+                <ul class="w-[80%] flex flex-col gap-4 xl:w-[90%] ml-[5%] xl:flex-row justify-center items-center xl:border xl:border-black xl:py-2 bg-gradient-to-r from-[#282828] to-[#110025]
                 z-10">
                     <a class="w-full xl:w-auto link" href="#top">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center xl:p-3">
+                            class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             TOP</li>
                     </a>
                     <a class="w-full xl:w-auto link" href="#about">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center xl:p-3 ">
+                        class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             ABOUT ME</li>
                     </a>
                     <a class="w-full xl:w-auto link" href="#service">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3 ">
+                        class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             MY SERVICES</li>
                     </a>
                     <a class="w-full xl:w-auto link" href="#projects">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                        class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             PROJECTS</li>
                     </a>
                     <a class="w-full xl:w-auto link" href="#tech">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                        class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             TECNOLOGIES</li>
                     </a>
                     <a class="w-full xl:w-auto link" href="#contact">
                         <li
-                            class="w-full hover:bg-black hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-black xl:w-auto xl:text-center  xl:p-3">
+                        class="w-full text-white hover:bg-white hover:bg-opacity-20 py-1 pl-2 hover:border-b-2 hover:border-gray-400 xl:w-auto xl:text-center xl:p-3">
                             CONTACT</li>
                     </a>
                 </ul>
@@ -201,44 +201,44 @@
         <section id="about" class="w-full py-24" data-aos="fade-flip">
             <div class="w-full flex flex-col justify-center items-center mb-7 ">
                 <div
-                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
-                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Some Word About Me</h1>
-                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">Know Me More</h1>
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-white lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5 text-white">Some Word About Me</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl text-white">Know Me More</h1>
                 </div>
                 <h1 id="fot"
-                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">About
+                    class="text-white text-5xl font-bold lg:text-9xl opacity-5 absolute left-[8%] lg:left-[10%] 2xl:hidden">About
                     ME</h1>
             </div>
 
             <div class="w-full flex flex-col justify-center items-center">
                 <div class="w-[95%] flex flex-col justify-start items-baseline lg:w-[80%]">
-                    <h1 class="text-2xl mb-5 font-semibold md:text-3xl lg:text-4xl">Hi, I'm Hafiz Muhammad Abubakar
+                    <h1 class="text-2xl mb-5 font-semibold md:text-3xl lg:text-4xl text-gray-400">Hi, I'm Hafiz Muhammad Abubakar
                         Siddique</h1>
-                    <p class="sm:w-1/2 mb-10 md:mb-20 lg:mb-28">I’m a front-end web developer with a passion for
+                    <p class="sm:w-1/2 mb-10 md:mb-20 lg:mb-28 text-gray-400">I’m a front-end web developer with a passion for
                         creating responsive, user-friendly websites. I’m skilled in HTML, CSS, and JavaScript, and I’m
                         familiar frameworks like React. I’m excited to continue learning and building clean, efficient
                         code that delivers great user experiences.</p>
                     <div class="flex flex-col gap-5 sm:flex-row md:gap-9 lg:gap-14">
                         <div>
-                            <p class="font-medium">Email:</p>
-                            <p>hafizabubakar0155@gmail.com</p>
+                            <p class="font-medium text-white">Email:</p>
+                            <p class="text-gray-400">hafizabubakar0155@gmail.com</p>
                         </div>
                         <div>
-                            <p class="font-medium">Date of Birth:</p>
-                            <p>15 November, 2005</p>
+                            <p class="font-medium text-white">Date of Birth:</p>
+                            <p class="text-gray-500">15 November, 2005</p>
                         </div>
                         <div>
-                            <p class="font-medium">City:</p>
-                            <p>Faislabad, Pakistan</p>
+                            <p class="font-medium text-white">City:</p>
+                            <p class="text-gray-500">Faislabad, Pakistan</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
-                <p class="text-lg text-gray-800">02/06</p>
+                <p class="text-lg text-gray-200">02/06</p>
                 <a class="flex link" href="#service">
-                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
-                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer text-white">Next Capter</p>
+                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer text-white"></i>
                 </a>
             </div>
         </section>
@@ -249,30 +249,30 @@
             <div class="w-full flex flex-col justify-center items-center" data-aos="fade-flip">
                 <div class="w-full flex flex-col justify-center items-center mb-7 lg:mb-10">
                     <div
-                        class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
-                        <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">How I Can Help Your Next Project</h1>
-                        <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">What I Do?</h1>
+                        class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-white lg:w-[80%]">
+                        <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5 text-white">How I Can Help Your Next Project</h1>
+                        <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl text-white">What I Do?</h1>
                     </div>
                     <h1 id="fot"
-                        class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">MY
+                        class="text-5xl font-bold lg:text-9xl opacity-5 text-white absolute left-[8%] lg:left-[10%] 2xl:hidden">MY
                         SERVICES</h1>
                 </div>
-                <div id="slider-1" class="w-full flex justify-center items-center lg:w-[80%] py-10">
+                <div id="slider-1" class="w-full lg:w-[80%] py-10">
 
 
                     <div>
-                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none ml-2">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%] border-white border mb-5 hover:border-none ml-2">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
                                             <h1
-                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                class="text-lg py-2 px-4 font-bold border-2 border-white rounded-[50%] mb-5 text-white">
                                                 1</h1>
-                                            <h1 class="text-2xl font-bold mb-4">HTML</h1>
-                                            <p>Building Sutructure Of a WebSite With HTML.</p>
+                                            <h1 class="text-2xl font-bold mb-4 text-white">HTML</h1>
+                                            <p class="text-gray-300">Building Sutructure Of a WebSite With HTML.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -283,18 +283,18 @@
 
 
                     <div>
-                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%] border-white border mb-5  hover:border-none  ml-2">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
                                             <h1
-                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                class="text-lg py-2 px-4 font-bold border-2 border-white rounded-[50%] mb-5 text-white">
                                                 2</h1>
-                                            <h1 class="text-2xl font-bold mb-4">Css</h1>
-                                            <p>Styling Of a Website Using Vanila Css.</p>
+                                            <h1 class="text-2xl font-bold mb-4 text-white">Css</h1>
+                                            <p class="text-gray-300">Styling Of a Website Using Vanila Css.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -305,18 +305,18 @@
 
 
                     <div>
-                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%] border-white border mb-5 hover:border-none  ml-2">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
                                             <h1
-                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                class="text-lg py-2 px-4 font-bold border-2 border-white rounded-[50%] mb-5 text-white">
                                                 3</h1>
-                                            <h1 class="text-2xl font-bold mb-4">JavaScript</h1>
-                                            <p>Functionality Of a WebSite Using JavaScript .</p>
+                                            <h1 class="text-2xl font-bold mb-4 text-white">JavaScript</h1>
+                                            <p class="text-gray-300">Functionality Of a WebSite Using JavaScript .</p>
                                         </div>
                                     </div>
                                 </div>
@@ -324,18 +324,18 @@
                         </div>
                     </div>
                     <div>
-                        <div class="w-[95%] border-black border mb-5 bg-[#ffd966] hover:border-none  ml-2">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%] border-white border mb-5  hover:border-none  ml-2">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-[70%] flex flex-col justify-start items-baseline py-7">
                                             <h1
-                                                class="text-lg py-2 px-4 font-bold border-2 border-black rounded-[50%] mb-5">
+                                                class="text-lg py-2 px-4 font-bold border-2 border-white rounded-[50%] mb-5 text-white">
                                                 4</h1>
-                                            <h1 class="text-2xl font-bold mb-4">TailwindCss</h1>
-                                            <p>I Use TailwindCss For Designing of a Website.</p>
+                                            <h1 class="text-2xl font-bold mb-4 text-white">TailwindCss</h1>
+                                            <p class="text-gray-300">I Use TailwindCss For Designing of a Website.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -347,10 +347,10 @@
                 </div>
             </div>
             <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
-                <p class="text-lg text-gray-800">03/06</p>
+                <p class="text-lg text-gray-200">03/06</p>
                 <a class="flex link" href="#projects">
-                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
-                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                    <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer text-white">Next Capter</p>
+                <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer text-white"></i>
                 </a>
             </div>
         </section>
@@ -360,12 +360,12 @@
         <section id="projects" class="w-full py-24 flex flex-col justify-center items-center" data-aos="fade-flip">
             <div class="w-full flex flex-col justify-center items-center mb-20">
                 <div
-                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
-                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">My Few Projects</h1>
-                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">My Projects</h1>
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-white lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5 text-white">My Few Projects</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl text-white lg:text-7xl">My Projects</h1>
                 </div>
                 <h1 id="fot"
-                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    class="text-5xl font-bold lg:text-9xl opacity-5 absolute left-[8%] lg:left-[10%] 2xl:hidden text-white">
                     PROJECTS</h1>
             </div>
 
@@ -374,18 +374,18 @@
 
 
                     <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/cars/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-full h-96  flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/one.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-1</h1>
-                                            <p>This is my first project. it is also have responsive design and
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-1</h1>
+                                            <p class="text-gray-200">This is my first project. it is also have responsive design and
                                                 it is very hard for me to make this because this is my first
                                                 experience to make a webpage.I make it with HTML , Css.</p>
                                         </div>
@@ -398,18 +398,18 @@
 
                     <a class="w-full flex justify-center items-center"
                         href="https://hafizabubakar555.github.io/valentine/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d]] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                         <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/two.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-2</h1>
-                                            <p> This is my Second project. It is also have responsive design.it
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-2</h1>
+                                            <p class="text-gray-200"> This is my Second project. It is also have responsive design.it
                                                 is also make with HTML ,Css.This is the time that i was
                                                 learning bootstrap and TailwindCss.</p>
                                         </div>
@@ -421,18 +421,18 @@
 
 
                     <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/stars/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/three.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-3</h1>
-                                            <p>This is my Third project.it is make with HTML,TailwindCss and
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-3</h1>
+                                            <p class="text-gray-200">This is my Third project.it is make with HTML,TailwindCss and
                                                 Javascript. This time i am learning Javascript. First i make
                                                 the layout of this page then completing JavaScript and come
                                                 back and include the funtaionality.</p>
@@ -450,18 +450,18 @@
 
                     <a class="w-full flex justify-center items-center"
                         href="https://hafizabubakar555.github.io/Erich-Redder/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/four.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-4</h1>
-                                            <p>This is my fourth project. it is make with HTML, Css and
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-4</h1>
+                                            <p class="text-gray-200">This is my fourth project. it is make with HTML, Css and
                                                 JavaScript.In this page i iprove my desin and focus the
                                                 responsivness and functionality and i am also include
                                                 animation.</p>
@@ -474,18 +474,18 @@
 
 
                     <a class="w-full flex justify-center items-center" href="https://hafizabubakar555.github.io/Jfile/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/five.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-5</h1>
-                                            <p>This is my fifth project. it is make with HTML, TailwindCss
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-5</h1>
+                                            <p class="text-gray-200">This is my fifth project. it is make with HTML, TailwindCss
                                                 and JavaScript .In this point i realize this that now i am a
                                                 Frontend Devoloper.</p>
                                         </div>
@@ -498,18 +498,18 @@
 
                     <a class="w-full flex justify-center items-center"
                         href="https://hafizabubakar555.github.io/Donation-Form/">
-                        <div class="w-[95%]  border-black border mb-5 bg-[#ffd966] hover:border-none">
-                            <div class="w-full border-black duration-200 hover:border bg-[#ffd966]  hover:rotate-3">
+                        <div class="w-[95%]  border-white border mb-5 bg-gradient-to-r from-[#4d79a2] to-[#3e067d] hover:border-none">
+                            <div class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]  hover:rotate-3">
                                 <div
-                                    class="w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-[-6deg]">
+                                    class="w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-[-6deg]">
                                     <div
-                                        class="flex flex-col justify-center items-center w-full border-black duration-200 hover:border bg-[#ffd966]   hover:rotate-3">
+                                        class="flex flex-col justify-center items-center w-full border-white duration-200 hover:border bg-gradient-to-r from-[#4d79a2] to-[#3e067d]   hover:rotate-3">
                                         <div class="w-full h-96 flex flex-col justify-start items-baseline p-2">
                                             <div class="flex w-full mb-3">
                                                 <img src="./images/six.PNG" alt="">
                                             </div>
-                                            <h1 class="text-2xl font-semibold mb-2">Project-6</h1>
-                                            <p>This is my sisth project and this is the donation form of the
+                                            <h1 class="text-2xl font-semibold mb-2 text-white">Project-6</h1>
+                                            <p class="text-gray-200">This is my sisth project and this is the donation form of the
                                                 fifth project. it is also have funstionality and responsive
                                                 design.</p>
                                         </div>
@@ -524,10 +524,10 @@
 
         </section>
         <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-20">
-            <p class="text-lg text-gray-800">04/06</p>
+            <p class="text-lg text-gray-200">04/06</p>
             <a class="flex link" href="#tech">
-                <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
-            <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer text-white">Next Capter</p>
+            <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer text-white"></i>
             </a>
         </div>
         <!-- projects end -->
@@ -536,12 +536,12 @@
         <section data-aos="fade-flip" id="tech" class="w-full py-24">
             <div class="w-full flex flex-col justify-center items-center mb-20" data-aos="fade-flip">
                 <div
-                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
-                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Technologies</h1>
-                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">That I'm Use</h1>
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-white lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5 text-white">Technologies</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl text-white">That I'm Use</h1>
                 </div>
                 <h1 id="fot"
-                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    class="text-white text-5xl font-bold lg:text-9xl opacity-5 absolute left-[8%] lg:left-[10%] 2xl:hidden">
                     TECNOLOGIES</h1>
             </div>
 
@@ -576,10 +576,10 @@
                 </div>
             </div>
             <div class="flex items-center ml-4 lg:ml-32 mt-20 lg:mt-32 xl:mt-40">
-                <p class="text-lg text-gray-800">05/06</p>
+                <p class="text-lg text-gray-200">05/06</p>
                 <a class="flex link" href="#contact">
-                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer">Next Capter</p>
-                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer"></i>
+                        <p class="ml-4 text-xl font-normal hover:font-semibold cursor-pointer text-white">Next Capter</p>
+                    <i class="fa-solid fa-arrow-down-long ml-3 text-xl cursor-pointer text-white"></i>
                     </a>
             </div>
         </section>
@@ -589,71 +589,71 @@
         <section id="contact" class="w-full py-24" data-aos="fade-flip">
             <div class="w-full flex flex-col justify-center items-center mb-20">
                 <div
-                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-black lg:w-[80%]">
-                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5">Let's Get In Touch</h1>
-                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl">Contact Me</h1>
+                    class="w-[95%] flex flex-col justify-start items-baseline py-5 px-10 lg:px-14 border-l-4 border-white lg:w-[80%]">
+                    <h1 class="text-xl sm:text-2xl mb-2 lg:mb-5 text-white">Let's Get In Touch</h1>
+                    <h1 class="text-2xl font-bold sm:text-4xl lg:text-7xl text-white">Contact Me</h1>
                 </div>
                 <h1 id="fot"
-                    class="text-5xl font-bold lg:text-9xl opacity-10 absolute left-[8%] lg:left-[10%] 2xl:hidden">
+                    class="text-5xl font-bold lg:text-9xl opacity-5 text-white absolute left-[8%] lg:left-[10%] 2xl:hidden">
                     CONTACT</h1>
             </div>
             <div class="w-full flex flex-col justify-center items-center mb-20 md:mb-32">
                 <div class="w-[90%] flex flex-col justify-start items-baseline gap-8 lg:flex-row lg:w-[80%]">
                     <div class="w-full flex flex-col gap-8 sm:flex-row">
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-phone border-2 border-black p-5 rounded-[50%]"></i>
-                            <p>+92 322 6368525</p>
+                            <i class="fa-solid fa-phone border-2 border-white text-white p-5 rounded-[50%]"></i>
+                            <p class="text-gray-300">+92 322 6368525</p>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fa-regular fa-envelope border-2 border-black p-5 rounded-[50%]"></i>
-                            <p>hafizabubakar0155@gmail.com</p>
+                            <i class="fa-regular fa-envelope border-2 border-white text-white p-5 rounded-[50%]"></i>
+                            <p class="text-gray-300">hafizabubakar0155@gmail.com</p>
                         </div>
                     </div>
                     <div class="w-full flex flex-col gap-8 sm:flex-row">
                         <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-location-dot border-2 border-black p-5 rounded-[50%]"></i>
-                            <p>Allamah IQbal Colony Faislabad Pakistan</p>
+                            <i class="fa-solid fa-location-dot border-2 border-white text-white p-5 rounded-[50%]"></i>
+                            <p class="text-gray-300">Allamah IQbal Colony Faislabad Pakistan</p>
                         </div>
                         <div class="flex gap-5">
                             <a href="#"><i
-                                    class="fa-brands fa-facebook border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                                    class="fa-brands fa-facebook border-2 border-white text-white p-4 rounded-[50%] hover:bg-gradient-to-r hover:from-[#3e067d] hover:to-[#4d79a2] hover:border-none"></i></a>
                             <a href="#"><i
-                                    class="fa-brands fa-instagram border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                                    class="fa-brands fa-instagram border-2 border-white text-white p-4 rounded-[50%] hover:bg-gradient-to-r hover:from-[#3e067d] hover:to-[#4d79a2] hover:border-none"></i></a>
                             <a href="#"><i
-                                    class="fa-brands fa-linkedin border-2 border-black p-4 rounded-[50%] hover:bg-black hover:text-[#ffd966]"></i></a>
+                                    class="fa-brands fa-linkedin border-2 border-white text-white p-4 rounded-[50%] hover:bg-gradient-to-r hover:from-[#3e067d] hover:to-[#4d79a2] hover:border-none"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-full flex flex-col justify-center items-center mb-16 lg:w-[80%]">
                 <div class="w-[90%] flex flex-col justify-start items-baseline gap-8 lg:w-[75%]">
-                    <h1 class="text-2xl font-bold md:text-4xl mb-8">Leave a Message</h1>
+                    <h1 class="text-2xl font-bold md:text-4xl mb-8 text-white">Leave a Message</h1>
                     <div class="w-full flex-col flex gap-5 md:flex-row">
                         <div class="w-full">
-                            <p class="text-lg mb-4">Name</p>
+                            <p class="text-lg mb-4 text-white">Name</p>
                             <input
-                                class="w-full h-11 pl-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                                class="w-full h-11 pl-2 bg-transparent border-b-2 text-gray-400 border-black placeholder:text-gray-400"
                                 type="text" placeholder="Your Name">
                         </div>
                         <div class="w-full">
-                            <p class="text-lg mb-4">Email</p>
+                            <p class="text-lg mb-4 text-white">Email</p>
                             <input
-                                class="w-full h-11 pl-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                                class="w-full h-11 pl-2 bg-transparent border-b-2 text-gray-400 border-black placeholder:text-gray-400"
                                 type="email" placeholder="Your Email">
                         </div>
                     </div>
                     <div class="w-full mb-10">
-                        <p class="text-lg mb-4">Message</p>
+                        <p class="text-lg mb-4 text-white">Message</p>
                         <textarea
-                            class="w-full h-32 pl-2 pt-2 bg-transparent border-b-2 border-black placeholder:text-gray-700"
+                            class="w-full h-32 pl-2 pt-2 bg-transparent border-b-2 text-gray-400 border-black placeholder:text-gray-400"
                             placeholder="Your Message"></textarea>
                     </div>
                     <button
-                        class="text-xl border-black border py-10 px-6 rounded-[50%] hover:bg-black hover:text-white">Submit</button>
+                        class="text-xl border-white text-white border py-10 px-6 rounded-[50%] hover:bg-gradient-to-r hover:from-[#3e067d] hover:to-[#4d79a2] hover:border-none">Submit</button>
                 </div>
             </div>
             <div class="flex items-center ml-4 lg:ml-32 mt-20 ">
-                <p class="text-lg text-gray-800">06/06</p>
+                <p class="text-lg text-gray-200">06/06</p>
             </div>
         </section>
         <!-- Contact end -->
@@ -664,10 +664,10 @@
 
 
     <!-- footer start -->
-    <footer class="bg-[#f1cc5d] w-full py-4 lg:py-5">
+    <footer class="bg-gradient-to-r from-[#282828] to-[#110025] w-full py-4 lg:py-5">
         <div class="w-full flex flex-row justify-between items-center sm:justify-around">
             <div>
-                <h1 class="ml-3 lg:m-0">Copyright © 2024. All rights reservd</h1>
+                <h1 class="ml-3 lg:m-0 text-white">Copyright © 2024. All rights reservd</h1>
             </div>
     </footer>
     <!-- footer end -->
